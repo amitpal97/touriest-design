@@ -1,0 +1,97 @@
+.tourist-wrapper {
+  padding: 80px;
+  /* background: rgb(255, 255, 255); */
+  background: linear-gradient(145deg, white, white, #9599e8);
+}
+.touriest-sub-wrapper {
+  height: 78vh;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px;
+
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.1px);
+  border: 1px solid rgba(111, 0, 0, 0.3);
+}
+
+.readyto-takeWrapper {
+  padding: 28px;
+  border-radius: 22px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url("./images/header/unnamed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.readyto-takeSubWrapperOne {
+  display: flex;
+  flex-direction: column;
+}
+.readyto-takeSubWrapperOne p {
+  padding: 20px 0;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.trip-wrapper {
+  display: flex;
+  gap: 30px;
+}
+.trip-subWrapper {
+  display: flex;
+}
+
+.trip-subWrapper div {
+  width: 30px;
+}
+
+.readyto-takeSubWrapperTwo {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 35px;
+}
+.citywrapper-timewrapper-mainwrapper {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  gap: 5%;
+}
+
+.citywrapper-mainwrapper {
+  display: flex;
+  width: 45%;
+  gap: 30%;
+}
+
+.citywrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.city-subwrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.timewrapper-mainwrapper {
+  display: flex;
+  width: 65%;
+  justify-content: space-evenly;
+}
+
+.timewrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-subwrapper {
+  display: flex;
+}
