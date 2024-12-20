@@ -18,29 +18,30 @@
 }
 
 .readyto-takeWrapper {
-  padding: 33px;
+  /* padding: 33px; */
   border-radius: 22px;
   display: flex;
   width: 100%;
   justify-content: space-between;
   flex-direction: column;
-  /* background-image: url("./images/header/unnamed.png"); */
+  background-image: url("/images/header/header-v2.jpg");
   /* background-color: #edede4; */
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(187, 181, 247, 1) 0%,
     rgba(207, 243, 242, 1) 31%,
     rgba(240, 240, 216, 1) 100%
-  );
+  ); */
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
 .readyto-takeSubWrapperOne {
   display: flex;
   flex-direction: column;
+  padding: 33px 33px 0;
 }
 
 .readyto-takeSubWrapperOne-para {
@@ -57,15 +58,17 @@
 }
 
 .trip-subWrapper-para {
+  color: grey;
   font-family: Poppins;
   font-weight: 500;
   font-size: 18px;
 }
+
+
 .trip-subWrapper {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #9879e8;
 }
 
 .trip-subWrapper div {
@@ -76,10 +79,13 @@
 .readyto-takeSubWrapperTwo {
   display: flex;
   justify-content: space-between;
-  /* background: lightgray; */
+  border-bottom-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+
+  background: #d9d9d96b;
   padding-top: 18px;
-  border-radius: 8px;
   gap: 45px;
+  padding: 33px;
   /* border: 0px solid rgba(111, 0, 0, 0.3);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -121,9 +127,9 @@
   border-radius: 10px;
   cursor: pointer;
   border: 0px solid rgba(111, 0, 0, 0.3);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: #f9f9f9;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .city-subwrapper div {
   width: 20px;
@@ -162,10 +168,10 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
+  background: #f9f9f9;
   border: 0px solid rgba(111, 0, 0, 0.3);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   cursor: pointer;
 }
 
@@ -187,9 +193,10 @@
   height: max-content;
   border-radius: 10px;
   border: 0px solid rgba(111, 0, 0, 0.3);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: #9879e8;
+  color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   font-family: Poppins;
   font-weight: 500;
   font-size: 14px;
@@ -206,7 +213,7 @@
   width: 100%;
   padding: 33px;
   display: flex;
-  gap: 76px;
+  gap: 40px;
   /* flex-direction: column; */
 }
 
@@ -215,6 +222,7 @@
   gap: 15px;
   flex-direction: column;
   width: 100%;
+  flex: 4;
 }
 
 .best-flight-leftwrapper-para {
@@ -231,6 +239,8 @@
   border-radius: 10px;
   width: 100%;
   /* gap: 10px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
 }
 
 .flight-details-wrapper-blockone {
@@ -249,6 +259,7 @@
   /* flex-direction: column; */
   gap: 13px;
   flex: 2;
+  padding-right: 30px;
 
   /* width: 100%; */
 }
@@ -337,8 +348,9 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-left: 60px;
+  padding-left: 30px;
   /* box-shadow: -5px 0 3px -5px rgba(0, 0, 0, 0.5); */
+  border-left: 1px dashed #bbbbbb;
 }
 
 .blockthree-subwrapperone {
@@ -389,9 +401,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 150px;
+  /* flex: 2; */
 }
 
-.best-flight-rightwrapper-paraone{
+.best-flight-rightwrapper-paraone {
   font-family: Poppins;
   font-weight: 500;
   font-size: 15px;
