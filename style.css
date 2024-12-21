@@ -569,6 +569,10 @@
     padding: 20px;
   }
 
+  .citywrapper{
+    padding: 0;
+  }
+
   .citywrapper-timewrapper-mainwrapper {
     flex-direction: column;
   }
