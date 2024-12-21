@@ -57,6 +57,17 @@
   padding: 10px 0 15px 0;
 }
 
+.trip-subWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
 .trip-subWrapper-para {
   color: grey;
   font-family: Poppins;
@@ -64,10 +75,14 @@
   font-size: 18px;
 }
 
-.trip-subWrapper {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.trip-subWrapper-para.active {
+  border-bottom: 3px solid #9879e8;
+  color: #9879e8;
+}
+.trip-subWrapper-para:hover {
+  border-bottom: 3px solid #9879e8;
+  color: #9879e8;
+  cursor: pointer;
 }
 
 .trip-subWrapper div {
@@ -462,6 +477,12 @@
   font-size: 18px;
 }
 
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .rightwrapper-fliterdata-blocktwo {
   display: flex;
   justify-content: space-between;
@@ -498,4 +519,215 @@
 
 .borderbottom {
   border-bottom: none;
+}
+
+/* mobile view start */
+
+@media only screen and (max-width: 768px) {
+  .tourist-wrapper {
+    padding: 20px;
+  }
+
+  .touriest-sub-wrapper {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .readyto-takeWrapper {
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .readyto-takeSubWrapperOne {
+    padding: 20px;
+  }
+
+  .readyto-takeSubWrapperOne-para {
+    font-size: 22px;
+  }
+
+  .trip-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+  .trip-subWrapper-para {
+    font-size: 16px;
+  }
+
+  .trip-subWrapper {
+    gap: 8px;
+  }
+
+  .readyto-takeSubWrapperTwo {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .citywrapper-timewrapper-mainwrapper {
+    flex-direction: column;
+  }
+
+  .citywrapper-mainwrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .citywrapper-pararone {
+    font-size: 12px;
+  }
+
+  .city-subwrapper {
+    padding: 8px;
+  }
+
+  .timewrapper-mainwrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .timewrapper {
+    align-items: flex-start;
+  }
+
+  .timewrapper-para {
+    font-size: 12px;
+  }
+
+  .time-subwrapper {
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .serchBtn-wrapper {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .serchBtn-wrapper div {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* best-flight-wrapper */
+  .best-flight-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .best-flight-leftwrapper {
+    width: 100%;
+  }
+
+  .best-flight-leftwrapper-para {
+    font-size: 20px;
+  }
+
+  .flight-details-wrapper {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .flight-details-wrapper-blockone {
+    width: 100%;
+    height: auto;
+  }
+
+  .flight-details-wrapper-blocktwo {
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 0;
+  }
+
+  .blocktwo-main-wrapper {
+    gap: 15px;
+  }
+
+  .blocktwo-wrapperone {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .blocktwo-subwrapper-blockone {
+    flex-direction: column;
+  }
+
+  .blocktwo-subwrapper-blocktwo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flight-details-wrapper-blockthree {
+    padding-left: 0;
+    gap: 20px;
+    border-left: none;
+  }
+
+  .blockthree-subwrapperone {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .best-flight-rightwrapper {
+    gap: 20px;
+  }
+
+  .rightwrapper-fliterdata {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .rightwrapper-fliterdata-blockone {
+    gap: 50px;
+  }
+
+  .rightwrapper-fliterdata-blockone select {
+    font-size: 14px;
+  }
+
+  .fliterdata-blocktwo-blockone p,
+  .fliterdata-blocktwo-blocktwo p {
+    font-size: 12px;
+  }
+}
+
+/* slider css */
+
+.noUi-horizontal {
+  height: 7px;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 1px;
+  background: none !important;
+  left: 14px;
+  top: 6px;
+  color: #9879e8;
+}
+
+.noUi-horizontal .noUi-handle {
+  border-radius: 50%;
+  width: 15px;
+  height: 13px;
+  right: -12px;
+  top: -4px;
+}
+
+.noUi-connect {
+  background: #9879e8;
 }
