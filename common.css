@@ -1,45 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
-  img,
-  video {
-    width: 100%;
-    /* height: auto; */
-  }
-  
-  ul,
-  ol,
-  li {
-    list-style: none;
-    cursor: pointer;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  button {
-    cursor: pointer;
-    border: none;
-    background: none;
-  }
-  
-  a {
-    width: 100%;
-  }
-  /* common */
-  
-  .elementCenter {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    width: 85%;
-  }
-  
-  
+img,
+video {
+  width: 100%;
+  /* height: auto; */
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  width: 100%;
+}
+/* common */
+
+.elementCenter {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 85%;
+}
+
+/* comoon */
+
+.styled-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.styled-checkbox:checked {
+  border-radius: 5px;
+  border-color: white;
+  background: #9879e8; /* Customize checkbox background */
+}
+
+.styled-checkbox:checked::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 5px;
+  height: 11px;
+  border: 2px solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
