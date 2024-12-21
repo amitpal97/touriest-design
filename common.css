@@ -40,6 +40,13 @@ a {
   width: 85%;
 }
 
+@media only screen and (max-width: 768px) {
+  .elementCenter {
+    width: 100%;
+  }
+
+}
+
 /* comoon */
 
 .styled-checkbox {
